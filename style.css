@@ -1,0 +1,140 @@
+:root {
+  --primary: #6c63ff;
+  --bg: linear-gradient(135deg, #667eea, #764ba2);
+  --glass: rgba(255,255,255,0.15);
+  --border: rgba(255,255,255,0.3);
+  --error: #ff4d4d;
+  --success: #2ecc71;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+/* BACKGROUND */
+body {
+  margin: 0;
+  background: var(--bg);
+  color: white;
+}
+
+/* CONTAINER */
+.container {
+  padding: 20px;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* BOTONES */
+button {
+  background: var(--primary);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* LISTA */
+.lista {
+  display: grid;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* TARJETA */
+.contacto {
+  background: var(--glass);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.3s;
+}
+
+.contacto:hover {
+  background: rgba(255,255,255,0.25);
+  transform: translateY(-3px);
+}
+
+/* MODAL */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: var(--glass);
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+}
+
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* VALIDACIÓN CSS */
+input:invalid {
+  border-color: var(--error);
+}
+
+input:valid {
+  border-color: var(--success);
+}
+
+/* TOAST */
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--glass);
+  padding: 15px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s;
+}
+
+/* UTIL */
+.hidden {
+  display: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .contacto {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

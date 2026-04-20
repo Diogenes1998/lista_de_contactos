@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Contactos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>📇 Contact List</h1>
+    <button id="btnNuevo">➕ New</button>
+  </header>
+
+  <!-- LISTA -->
+  <div id="lista" class="lista"></div>
+</div>
+
+<!-- MODAL -->
+<div id="modal" class="modal hidden">
+  <div class="modal-content">
+    <h2>Contactos</h2>
+
+    <form id="form">
+      <input type="text" id="Name" placeholder="Name" required>
+      <input type="text" id="lastName" placeholder="Last Name" required>
+      <input type="email" id="correo" placeholder="Email" required>
+      <input type="text" id="telefono" placeholder="Phone" required pattern="[0-9]{7,15}">
+      <input type="text" id="ciudad" placeholder="City" required>
+
+      <select id="genero" required>
+        <option value="">Gender</option>
+        <option value="M">Male</option>
+        <option value="F">Female</option>
+      </select>
+
+      <div class="acciones-form">
+        <button type="submit">💾 Save</button>
+        <button type="button" id="cerrarModal">❌ Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div id="toast" class="toast hidden"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
