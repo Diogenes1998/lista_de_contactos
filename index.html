@@ -2,15 +2,15 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Lista de Contactos</title>
+  <title>Contactos Pro</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
   <header>
-    <h1>📇 Contact List</h1>
-    <button id="btnNuevo">➕ New</button>
+    <h1>📇 Contactos</h1>
+    <button id="btnNuevo">➕ Nuevo</button>
   </header>
 
   <!-- LISTA -->
@@ -20,24 +20,24 @@
 <!-- MODAL -->
 <div id="modal" class="modal hidden">
   <div class="modal-content">
-    <h2>Contactos</h2>
+    <h2>Contacto</h2>
 
     <form id="form">
-      <input type="text" id="Name" placeholder="Name" required>
-      <input type="text" id="lastName" placeholder="Last Name" required>
-      <input type="email" id="correo" placeholder="Email" required>
-      <input type="text" id="telefono" placeholder="Phone" required pattern="[0-9]{7,15}">
-      <input type="text" id="ciudad" placeholder="City" required>
+      <input type="text" id="nombre" placeholder="Nombre" required>
+      <input type="text" id="apellido" placeholder="Apellido" required>
+      <input type="email" id="correo" placeholder="Correo" required>
+      <input type="text" id="telefono" placeholder="Teléfono" required pattern="[0-9]{7,15}">
+      <input type="text" id="ciudad" placeholder="Ciudad" required>
 
       <select id="genero" required>
-        <option value="">Gender</option>
-        <option value="M">Male</option>
-        <option value="F">Female</option>
+        <option value="">Género</option>
+        <option value="M">Masculino</option>
+        <option value="F">Femenino</option>
       </select>
 
       <div class="acciones-form">
-        <button type="submit">💾 Save</button>
-        <button type="button" id="cerrarModal">❌ Cancel</button>
+        <button type="submit">💾 Guardar</button>
+        <button type="button" id="cerrarModal">❌ Cancelar</button>
       </div>
     </form>
   </div>
