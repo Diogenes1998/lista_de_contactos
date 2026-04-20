@@ -138,7 +138,7 @@ js/
 ---
 
 ## 👨‍💻 Autor
-*Diogenes Bermeo Sanchez
+## Diogenes Bermeo Sanchez
 
 Proyecto académico enfocado en el manejo del DOM, eventos y almacenamiento local.
 
